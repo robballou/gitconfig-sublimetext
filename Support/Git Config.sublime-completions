@@ -1,0 +1,25 @@
+{
+	"scope": "source.gitconfig",
+	"completions": [
+		{"trigger": "add", "contents": "[add]"},
+		{"trigger": "advice", "contents": "[advice]"},
+		{"trigger": "alias", "contents": "[alias]"},
+		{"trigger": "am", "contents": "[am]"},
+		{"trigger": "branch", "contents": "[branch]"},
+		{"trigger": "clean", "contents": "[clean]"},
+		{"trigger": "color", "contents": "[color]"},
+		{"trigger": "column", "contents": "[column]"},
+		{"trigger": "core", "contents": "[core]"},
+		{"trigger": "credential", "contents": "[credential]"},
+		{"trigger": "diff", "contents": "[diff]"},
+		{"trigger": "fetch", "contents": "[fetch]"},
+		{"trigger": "format", "contents": "[format]"},
+		{"trigger": "gc", "contents": "[gc]"},
+		{"trigger": "gitcvs", "contents": "[gitcvs]"},
+		{"trigger": "gitweb", "contents": "[gitweb]"},
+		{"trigger": "grep", "contents": "[grep]"},
+		{"trigger": "gui", "contents": "[gui]"},
+		{"trigger": "guitool", "contents": "[guitool]"},
+		{"trigger": "user", "contents": "[user]"}
+	]
+}
