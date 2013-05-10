@@ -25,7 +25,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\s*([a-zA-Z0-9_]+)\s*=\s*(.+)$</string>
+			<string>^\s*([a-zA-Z0-9_][a-zA-Z0-9_\-]*)\s*=\s*(.+)$</string>
 		</dict>
 		<dict>
 			<key>match</key>
