@@ -2,21 +2,21 @@
   "scopeName": "source.gitconfig",
   "fileTypes": [".gitconfig"],
   "patterns": [
-    { "match": "^\\s*([a-zA-Z0-9_]+)\\s*=\\s*(.+)$",
+    { "match": "^\\s*([a-zA-Z0-9_]+)\\s*=\\s*([^;#]+)",
       "captures": {
           "1": { "name": "keyword.name" },
           "2": { "name": "string" }
       }
     },
     {
-      "match": "^\\s*[;#].+",
+      "match": "\\s*[;#].+",
       "name": "comment"
     },
     {
-      "match": "^\\[([^\\]]+)\\]",
+      "match": "^\\[([^]\"]*(\"\\w+\")?)\\]",
       "captures": {
         "1": { "name": "meta.header" },
-        "2": { "name": "entity.name.section"}
+        "3": { "name": "entity.name.section"}
       }
     }
   ],
