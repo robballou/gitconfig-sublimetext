@@ -25,11 +25,11 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\s*([a-zA-Z0-9_][a-zA-Z0-9_\-]*)\s*=\s*(.+)$</string>
+			<string>^\s*([a-zA-Z0-9_][a-zA-Z0-9_\-]*)\s*=\s*([^;#]+)</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^\s*[;#].+</string>
+			<string>\s*[;#].+</string>
 			<key>name</key>
 			<string>comment</string>
 		</dict>
@@ -41,14 +41,14 @@
 					<key>name</key>
 					<string>meta.header</string>
 				</dict>
-				<key>2</key>
+				<key>3</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.section</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\[(\w+)\]</string>
+			<string>^\[([^]"]*("\w+")?)\]</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
