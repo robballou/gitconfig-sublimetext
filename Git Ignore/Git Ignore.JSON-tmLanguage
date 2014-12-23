@@ -3,7 +3,7 @@
   "fileTypes": [".gitignore"],
   "patterns": [
     {
-      "match": "[#].+$",
+      "match": "[#].*$",
       "name": "comment"
     }
   ],
