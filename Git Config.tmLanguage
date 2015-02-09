@@ -28,8 +28,31 @@
 			<string>^\s*([a-zA-Z0-9_][a-zA-Z0-9_\-]*)\s*=\s*([^;#]+)</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>comment.line.number-sign.git-config</string>
+					</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.git-config</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>comment.line.semi-colon.git-config</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.git-config</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>\s*[;#].+</string>
+			<string>((#).*$\n?)|((;).*$\n?)</string>
 			<key>name</key>
 			<string>comment</string>
 		</dict>
