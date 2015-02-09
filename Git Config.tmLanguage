@@ -4,12 +4,33 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
+		<string>.git/config</string>
+		<string>git/config</string>
 		<string>.gitconfig</string>
+		<string>etc/gitconfig</string>
+		<string>.gitmodules</string>
 	</array>
 	<key>name</key>
 	<string>Git Config</string>
 	<key>patterns</key>
 	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.name</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*([a-zA-Z0-9_][a-zA-Z0-9_\-]*)\s*=\s*!?"([^"]+)"</string>
+		</dict>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -31,10 +52,10 @@
 			<key>captures</key>
 			<dict>
 				<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>comment.line.number-sign.git-config</string>
-					</dict>
+				<dict>
+					<key>name</key>
+					<string>comment.line.number-sign.git-config</string>
+				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
